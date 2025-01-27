@@ -3,18 +3,18 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-How long should a user password be?
+Assuming you have a password stored in the variable passwd, what built-in function can you use to check if any characters contain a digit?
 {% /question %}
 {% option %}
-10 Characters
+passwd.digit
 {% /option %}
 {% option %}
- 8 Characters
+passwd ?? digit
 {% /option %}
 {% option answer=true %}
-12 Characters
+passwd.Any(char.IsDigit)
 {% /option %}
 {% option %}
-11 Characters
+passwd == digit
 {% /option %}
 {% /choice %}
